@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body{
+            background: #f8f7f5;
+            font-family: "Arimo", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        form{
+            width:28%;
+            border:1px solid #4C4541;
+            padding: 18px;
+            margin: auto;
+        }
+        label{
+            color:#4C4541;
+        }
+        .full_width{
+            width:100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom:12px ;
+        }
+        button{
+            background-color:blue;
+            color: white;
+            padding: 16px;
+            border: 1px solid #160229;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- text, email password, number , radio , ckeckbox, select, date -->
+    <form action="">
+        <Label for="full_name">Full Name</Label>
+        <input class="full_width" type="text" name="full_name" id="full_name" required placeholder="Jack Jill">
+        <br>
+        <label for="">Email</label>
+        <input  class="full_width" type="email" name="" id="">
+        <br>
+        <label for="Password">Password</label>
+        <input  class="full_width" type="password" name="password" id="password">
+        <br>
+        <label for="weight">What is your weight</label>
+        <input  class="full_width" type="number" name="weight" id="weight" min="10" max="150" step="1">
+        <br>
+        <label for="dob">Date of birth</label>
+        <input  class="full_width" type="date" name="dob" id="dob" min="1940-01-01" max="2008-12-31">
+        <br>
+       <label>What is your gender</label>
+       <br>
+        <input type="radio" name="gender" id="F" >
+         <label for="F">Female</label>
+         <br>
+         <input type="radio" name="gender" id="M">
+         <label for="M">Male</label>
+        <br>
+        <label >What is your favorite food</label>
+        <br>
+        <input type="checkbox" name="fav_food" id="fish">
+        <label for="fish">Fish</label>
+        <br>
+         <input type="checkbox" name="fav_food" id="ugali">
+        <label for="ugali">Ugali</label>
+        <br>
+         <input type="checkbox" name="fav_food" id="beans">
+        <label for="beans">Beans</label>
+        <br>
+         <input type="checkbox" name="fav_food" id="chapati">
+        <label for="chapati">Chapati</label>
+        <br>
+        <label for="fav-color">what is your favorite color</label>
+        <select class="full_width" name="fav-color" id="fav-color">
+            <option value="0">Favorite color</option>
+            <option value="1">Yellow</option>
+            <option value="2">Blue</option>
+            <option value="3">Aqua</option>
+            <option value="4">Green</option>
+            <option value="5">Purple</option>
+            <option value="6">White</option>
+        </select>
+        <br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
