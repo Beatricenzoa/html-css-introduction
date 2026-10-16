@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); 
+      *{
+        padding: 0;
+        margin: 0;
+      }
+      body{
+        font-family: 'Outfit', sans-serif;
+        font-optical-sizing: auto;
+      }
+      nav{
+        display: flex;
+        justify-content: center;
+        /* background: #f0ccd3; */
+      }
+      .content{
+        /* background: #93ec93; */
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo img{
+        width: 48px;
+        height: 48px;
+      }
+      .content ul{
+        display: flex;
+        list-style-type: none;
+      }
+      .content li{
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+      .content a{
+        text-decoration: none;
+        color:black;
+        padding: 12px 14px;
+        text-transform: capitalize;
+      }
+      .content a:hover{
+        color:#1c1a1a;
+        background:#b1acac ;
+        border-bottom: 1px solid #0e0707;
+      }
+      /* git add . */
+      /* git commit -m "created the navbar" */
+      /* git push  */
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="content">
+            <div class="logo">
+                <img src="images/car.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">Contact</a></li>
+        
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
