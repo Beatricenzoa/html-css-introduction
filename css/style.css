@@ -1,0 +1,35 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col{
+    border:1px solid #808080;
+    width:23.5%;
+}
+
+p{
+    text-align: center;
+}
+/* media queries */
+/* medium devices */
+@media  screen and (min-width:768px) and (max-width:1023px){
+    p{
+        color:#0000ff;
+    }
+    .col{
+        width:48%;
+        margin-bottom: 12px;
+    }
+}
+/* mobile */
+@media screen and (max-width:767px) {
+    .col{
+        width:100%;
+        margin-bottom: 12px;
+    }
+    p{
+        color:#149292;
+    }
+}
